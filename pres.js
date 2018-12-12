@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",function(event) {
 	// Load external SVG defs
 	let xhttp=new XMLHttpRequest();
-	xhttp.open('GET','/template_pres/svgtemplate_defs.svg',true);
+	xhttp.open('GET','svgtemplate_defs.svg',true);
 	xhttp.onreadystatechange=function() {
 		if (this.readyState==XMLHttpRequest.DONE && this.status==200) document.getElementsByTagName('body')[0].insertAdjacentHTML('afterbegin',this.responseText);
 	}
