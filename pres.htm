@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fr" data-notes="notes.html" data-synchronize="slides.php">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Présentation du système d'information sur l'eau">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Le système d'information sur l'eau</title>
+	<link rel="stylesheet" href="/template_pres/svgtemplate.css">
+	<link rel="stylesheet" href="/template_pres/template.css">
+	<link rel="stylesheet" href="pres.css">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="outline" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Sommaire</h1>
+		<div class="content"></div>
+	</div>
+
+	<section id="title" data-background="img/page_garde.svg" data-animation="convex">
+		<h1>
+			Le système d'information sur l'eau<br/><span class="subtitle">Revue de projets DSOD-UMS</span>
+		</h1>
+		<div class="authordate">François Hissel<br/><time>19 septembre 2018</div>
+	</section>
+
+	<section class="slide" data-section="L'organisation du SIE" data-ssection="Organisation" data-subsection="L'histoire des données sur l'eau" data-numfragment="5" data-background="img/page_courante.svg" data-animation="convex"> 
+		<h1>Trois étapes en 25 ans</h1>
+		<div class="content">
+			<figure class="centered">
+				<div data-file="img/chrono.svg"></div>
+			</figure>
+		</div>
+	</section>
+	
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="L'organisation générale"> 
+		<h1>Les composantes</h1>
+		<div class="content">
+			<div class="block">
+				<h1>Système d'information</h1>
+				<div class="content">
+					<blockquote>
+						Un système d'information est un réseau complexe de relations structurées où interviennent <span style="color: #666666;">hommes</span>, <span style="color: #a1c51b;">machines</span> et <span style="color: #08508a;">procédures</span> qui a pour but d’engendrer des flux ordonnés d’informations pertinentes provenant de différentes sources et destinées à servir de base aux décisions.
+					</blockquote>
+					<cite>Hugues Angot</cite>
+				</div>
+			</div>
+			<svg width="100%" height="350px" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1" style="margin: auto;">
+				<path d="M 100 100 L 100 0 A 100 100, 0, 0, 1, 186.60254 150 Z" fill="#e9f1da" stroke="none" />
+				<path d="M 100 100 L 186.60254 150 A 100 100, 0, 0, 1, 13.39746 150 Z" fill="#aaaaaa" stroke="none" />
+				<path d="M 100 100 L 13.39746 150 A 100 100, 0, 0, 1, 100 0 Z" fill="#9fd1f9" stroke="none" />
+				<text x="90" y="50" text-anchor="end" fill="#08508a" style="font-size: 0.6em">Organisation</text>
+				<text x="110" y="50" text-anchor="begin" fill="#a1c51b" style="font-size: 0.6em">Technologie</text>
+				<text x="100" y="170" text-anchor="middle" fill="#333333" style="font-size: 0.6em">Gouvernance</text>
+				<circle cx="100" cy="100" r="40" fill="#ffffff" stroke="none" />
+				<text x="100" y="100" text-anchor="middle" dominant-baseline="middle" fill="#000000">SI</text>
+			</svg>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex"> 
+		<h1>Le périmètre du SIE</h1>
+		<div class="content autocolumns">
+			<div class="block">
+				<h1>Objectif</h1>
+				<div class="content">
+					Collecter, enregistrer et communiquer les données et indicateurs sur :
+					<ul>
+						<li>l'eau</li>
+						<li>les milieux aquatiques</li>
+						<li>les usages de l'eau</li>
+						<li>les services publics d'eau et d'assainissement</li>
+					</ul>
+				</div>
+			</div>
+			<div class="block">
+				<h1>Périmètre géographique</h1>
+				<div class="content">
+					<ul>
+						<li>France métropolitaine</li>
+						<li>DOM</li>
+					</ul>
+				</div>
+			</div>
+			<div class="block">
+				<h1>Type de données</h1>
+				<div class="content" style="padding-bottom: 2px">
+					<ul>
+						<li>Eaux de surface continentales</li>
+						<li>Eaux côtières et de transition</li>
+						<li>Eaux souterraines</li>
+						<li>Milieux aquatiques</li>
+						<li>Espèces aquatiques et habitats</li>
+						<li>Activités humaines liées à l'eau</li>
+						<li>Actions mises en œuvre</li>
+					</ul>
+				</div>
+			</div>
+			<div class="block">
+				<h1>Nature des données</h1>
+				<div class="content" style="padding-bottom: 2px">
+					<ul>
+						<li>Données brutes</li>
+						<li>Données élaborées (indicateurs...)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex"> 
+		<h1>L'architecture générale</h1>
+		<div class="content">
+			<figure class="centered">
+			 <img src="img/architecture_sie.svg" />
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les textes fondateurs</h1>
+		<div class="content">
+			<ul>
+				<li>10 politiques publiques liées à l'eau</li>
+				<li>Un ministère responsable de la politique publique opère un SI métier
+					<ul>
+						<li>Objectifs : produire, gérer, transformer, utiliser la donnée pour la mise en œuvre de la politique publique</li>
+						<li>Un schéma de données : responsabilités de production de la donnée, gouvernance</li>
+					</ul>
+				</li>
+				<li>Un système d'information fédérateur
+					<ul>
+						<li>Objectifs : garantir la qualité, la cohérence de la donnée ; faciliter la transmission et la diffusion ; partager des services avec les SI métiers</li>
+						<li>Un schéma de données national : gouvernance, services communs, méthodes et données de référence</li>
+					</ul>
+				</li>
+			</ul>
+			<!--<img src="img/snde_screen.png" style="margin:auto; max-width: 100%; max-height: 200px;" /> !-->
+			<figure class="centered">
+				<img src="img/snde_screen.png" /> 
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex"> 
+		<h1>La gouvernance</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/gouvernance_sie.svg" />
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex"> 
+		<h1>Les coûts</h1>
+		<div class="content">
+			<ul>
+				<li>Coûts de la collecte, de la gestion, et de la diffusion des données</li>
+				<li>Seuls les coûts supportés par l'État et ses établissements publics (hors collectivités)</li>
+			</ul>
+			<table class="shadowed headcolumn" style="width:80%; margin-left: auto; margin-right: auto">
+				<thead>
+					<tr><td>Organismes</td><td>Coûts 2015 (M€)</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Agences de l'eau</td><td>69,6</td></tr>
+					<tr><td>AFB</td><td>27,5</td></tr>
+					<tr><td>État</td><td>37,6</td></tr>
+					<tr><td>Autres</td><td>2,6</td></tr>
+				</tbody>
+				<tfoot>
+					<tr><td>Total</td><td>137,3</td></tr>
+				</tfoot>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-section="Le contenu du SIE" data-ssection="Contenu" data-subsection="Données" data-animation="convex">
+		<h1>Les données du système des données publiques de l'eau</h1>
+		<div class="content">
+			<ul>
+				<li>Données de référence (<strong>cohérence</strong>)</li>
+				<li>Données thématiques issues de SI métiers et <strong>partagées</strong> selon leur schéma de données</li>
+				<li>Données issues de SI externes</li>
+				<li>Données et informations issues du <strong>traitement</strong> des données précédentes</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-subsection="Données de référence" data-animation="convex">
+		<h1>Les données de référence</h1>
+		<div class="content">
+			<p>Les données de référence consistent en :</p>
+			<ul>
+				<li>un dictionnaire de données</li>
+				<li>une codification des objets (bassins versants, masses d'eau, sites, unités...) : identifiant unique national ou européen</li>
+				<li>un jeu de données associant à l'identifiant les caractéristiques stables et communes de l'entité (le « référentiel »)</li>
+				<li>un ou plusieurs scénarios d'échange pour permettre la communication des données entre producteurs et utilisateurs (format, protocole)</li>
+			</ul>
+			<p>Les données de référence (sauf exception fondée en droit) sont disponibles sous licence libre sur <a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a>.</p>
+			<img src="img/logo_sandre.png" alt="" style="align-self: center;">
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les dictionnaires de données</h1>
+		<div class="content">
+			<table style="border-spacing: 1.6vw 1.2vh; margin:auto; border-collapse: separate; border: none">
+				<tbody>
+					<tr style="background-color: transparent; border:none">
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic1.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic2.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic3.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic4.png" style="max-width: 100%; max-height: 100%" /></figure>
+					</tr>
+					<tr style="background-color: transparent; border:none">
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Générique</strong><br/>10 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eaux de surface</strong><br/>7 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Assainissement</strong><br/>5 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Pluviométrie</strong><br/>4 dictionnaires</td>
+					</tr>
+					<tr style="height: 19.2vh; background-color: transparent; border:none">
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic5.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic6.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic7.png" style="max-width: 100%; max-height: 100%" /></figure>
+						<td style="width: 18.2vh; height: 19.2vh; text-align:center; background-color: transparent"><figure style="height: 100%"><img src="img/pic8.jpg" style="max-width: 100%; max-height: 100%" /></figure> 
+					</tr>
+					<tr style="background-color: transparent; border:none">
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Industrie</strong><br/>2 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eau potable</strong><br/>3 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eaux côtières</strong><br/>4 dictionnaires</td>
+						<td style="width: 18.2vh; text-align:center; background-color: transparent"><strong>Eaux souterraines</strong><br/>5 dictionnaires</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-numfragment="2" data-animation="convex" data-onshow="activate_arrows" data-onhide="deactivate_arrows">
+		<h1>Un scénario d'échange</h1>
+		<div class="content">
+			<svg width="100%" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" baseProfile="full" xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<marker id="arrow2" markerWidth="5" markerHeight="5" refX="2" refY="1.5" orient="auto" markerUnits="strokeWidth">
+						<path d="M0,0 L0,3 L4.5,1.5 z" fill="#08508A" />
+					</marker>
+				</defs>
+				<foreignObject x="0" y="180" width="120" height="40">
+					<body xmlns="http://www.w3.org/1999/xhtml" >
+						<div style="font: 0.6em sans-serif; border-width: 1px; border-style: solid">
+							<strong>Lieu :</strong> Termignon<br/>
+							<strong>Paramètre :</strong> Plomb <br/>
+							<strong>Date :</strong> 21/07/2017<br/>
+							...
+						</div>
+					</body>
+				</foreignObject>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 210 140" width="112" height="100%" x="136" y="0">
+					<image href="img/computer.png" width="210" height="140">
+				</svg>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 210 140" width="112" height="100%" x="552" y="0">
+					<image href="img/computer.png" width="210" height="140">
+				</svg>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 596 720" width="112" height="100%" x="680" y="0">
+					<image href="img/database.png" width="596" height="720">
+				</svg>
+				<svg preserveAspectRatio="xMinYMid meet" viewBox="0 0 596 720" width="112" height="100%" x="680" y="0">
+					<image href="img/database.png" width="596" height="720">
+				</svg>
+				<svg id="im001" data-fragment="{'0':['invisible']}" preserveAspectRatio="xMinYMid meet" viewBox="0 0 2000 2276" width="100" height="100%" x="350" y="-160">
+					<image href="img/xml.png" width="2000" height="2276">
+				</svg>
+				<svg id="im002" data-fragment="{'0-1':['invisible']}" preserveAspectRatio="xMinYMid meet" viewBox="0 0 2000 2276" width="100" height="100%" x="350" y="160">
+					<image href="img/xml.png" width="2000" height="2276">
+				</svg>
+				<path id="arrow001" data-fragment="{'0':['invisible']}" d="M 240 150 c 60 -60, 240 -60, 300 0" stroke="#08508A" stroke-width="5" fill="none" marker-end="url(#arrow2)" />
+				<path id="arrow002" data-fragment="{'0-1':['invisible']}" d="M 540 250 c -60 60, -240 60, -300 0" stroke="#08508A" stroke-width="5" fill="none" marker-end="url(#arrow2)" />
+			</svg>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les données de référence</h1>
+		<div class="content">
+			<ul>
+				<li>Plus de 30.000 éléments (substances, taxons, méthodes, unités, niveaux de qualification...)</li>
+				<li>Plus de 3.000 pages de spécification, en licence ouverte</li>
+				<li>Près de 10.000 utilisateurs enregistrés, dont certains contrôlés et labellisés</li>
+			</ul>
+			<p style="display: flex; justify-content: space-between; align-items: center">
+				<img class="shadowed" src="img/book1.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book2.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book3.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book4.png" alt="" style="max-width:17%;">
+				<img class="shadowed" src="img/book5.png" alt="" style="max-width:17%;">
+			</p>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Méthodes de référence">
+		<h1>La production des méthodes de référence</h1>
+		<div class="content" style="text-align: center">
+			<figure class="centered">
+				<img src="img/production_aquaref.svg" />
+			</figure>
+
+			<p>Garantir la <strong>qualité</strong> et la <strong>cohérence</strong> de la donnée !</p>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les documents d'Aquaref</h1>
+		<div class="content">
+			<div>
+				<div style="float:left; width: 30%">
+					<ul>
+						<li>États de l'art</li>
+						<li>Évaluation des pratiques</li>
+						<li>Développement de méthodes</li>
+					</ul>
+					<div style="position:relative; height: 39vh">
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;max-width: 60%" />
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom left; transform: rotate(-15deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom left; transform: rotate(-30deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref3.png" class="shadowed" style="position:absolute; right:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom left; transform: rotate(-45deg); max-width: 60%; max-height: 100%" />
+					</div>
+				</div>
+				<div style="float:right; width: 30%">
+					<ul>
+						<li>Guides techniques</li>
+						<li>Ateliers</li>
+						<li>Normalisation</li>
+						<li>Formation</li>
+					</ul>
+					<div style="position:relative; height: 39vh">
+						<img src="img/aquaref1.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref2.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom right; transform: rotate(15deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref1.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom right; transform: rotate(30deg); max-width: 60%; max-height: 100%" />
+						<img src="img/aquaref2.png" class="shadowed" style="position:absolute; left:0; top:6.2vh; border: 1px solid grey; margin: 0px 0 0 0;transform-origin: bottom right; transform: rotate(45deg); max-width: 60%; max-height: 100%" />
+					</div>
+				</div>
+				<div style="width: 40%; float: left; position:relative; left:6vw; padding: 0 7.8vh 0 0; box-sizing: border-box;">
+					<svg width="100%" height="55vh" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" baseprofile="full" xmlns="http://www.w3.org/2000/svg" version="1.1" style="margin: auto;">
+						<defs>
+							<marker id="arrow202" markerWidth="5" markerHeight="5" refX="3" refY="1.5" orient="auto" markerUnits="strokeWidth">
+								<path d="M0,0 L0,3 L4.5,1.5 z" fill="#08508A" />
+							</marker>
+							<marker id="arrow203" markerWidth="5" markerHeight="5" refX="2" refY="1.5" orient="auto" markerUnits="strokeWidth">
+								<path d="M5,0 L5,3 L0.5,1.5 z" fill="#08508A" />
+							</marker>
+						</defs>
+						<path d="M 100 100 L 100 20 A 80 80 0 0 1 169.28 150 Z" stroke="white" stroke-width="5" fill="#e9f1da" />
+						<path d="M 100 100 L 100 20 A 80 80 0 0 0 30.72 150 Z" stroke="white" stroke-width="5" fill="#e9f1da" />
+						<path d="M 100 100 L 30.72 150 A 80 80 0 0 0 169.28 150 Z" stroke="white" stroke-width="5" fill="#e9f1da" />
+						<text x="134.64" y="75" transform="rotate(60 134.64,75)" style="fill:#a1c51b; text-anchor:middle; font-size: 16px">Transfert</text>
+						<text x="65.36" y="75" transform="rotate(-60 65.36,75)" style="fill:#a1c51b; text-anchor:middle; font-size: 16px">Connaissance</text>
+						<text x="100" y="160" style="fill:#a1c51b; text-anchor:middle; font-size: 16px">Conseil</text>
+						<line x1="75" y1="75" x2="125" y2="75" stroke="#08508A" stroke-width="3" marker-start="url(#arrow203)" marker-end="url(#arrow202)" />
+						<line x1="70" y1="85" x2="95" y2="145" stroke="#08508A" stroke-width="3" marker-start="url(#arrow203)" marker-end="url(#arrow202)" />
+						<line x1="130" y1="85" x2="105" y2="145" stroke="#08508A" stroke-width="3" marker-start="url(#arrow203)" marker-end="url(#arrow202)" />
+					</svg>
+					<ul>
+						<li>Expertise, conseil</li>
+						<li>Hotline</li>
+					</ul>
+				</div>
+			</div>
+			<div style="text-align: center">Plus de 360 documents en accès libre sur <a href="http://www.aquaref.fr">www.aquaref.fr</a></div>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Services">
+		<h1>Les services offerts</h1>
+		<div class="content">
+			<ul>
+				<li>Partage des données de référence (pour la <strong>qualité</strong> et la <strong>cohérence</strong>), avec support technique
+					<ul>
+						<li>Méthodes : Aquaref, agrément...</li>
+						<li>Données : Sandre, certification</li>
+					</ul>
+				</li>
+				<li>Services d'information pour l'<strong>accès</strong> large à la donnée
+					<ul>
+						<li>Marque Eaufrance</li>
+						<li>Nom de domaine <span style="font-family: monospace">eaufrance.fr</span></li>
+						<li>Publications en ligne : cartes, data papers, indicateurs</li>
+						<li>Collections : rapports, synthèses, bulletins</li>
+					</ul>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Le portail <a href="http://www.eaufrance.fr">www.eaufrance.fr</a></h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/screen_eaufrance.png" /> 
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les collections Eaufrance</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/collections.png" /> 
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Les services offerts</h1>
+		<div class="content">
+			<ul>
+				<li>Services en réseau ouverts
+					<ul>
+						<li>Services d'accès à la donnée de référence</li>
+						<li>Services de recherche, de visualisation, de téléchargement</li>
+						<li>Services de traitement : géo-algorithmes, calcul de bio-indicateurs...</li>
+					</ul>
+				</li>
+				<li>Services en réseau pour les SI métiers (<strong>partage</strong>)
+					<ul>
+						<li>Services de collecte, de catalogage, de publication</li>
+						<li>Identification et authentification communes</li>
+						<li>Services d'infrastructure : hébergement</li>
+					</ul>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-section="Exemples de services fournis" data-ssection="Exemples">
+		<h1>Le catalogue de services</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/screen_eaufrance_old.png" /> 
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Services d'accès à la donnée">
+		<h1>Sandre</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_sandre.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td><ul><li>Donnée de référence</li><li>Périmètres réglementaires</li><li>Vocabulaire commun</li><li>Dictionnaires, scénarios</li></ul></td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.sandre.eaufrance.fr">www.sandre.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Téléchargement, services web, affichage, demande de modification, test des services</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>Sandre, agences de l'eau, DREAL</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Adès</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_ades.jpg" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td><ul><li>Qualité des eaux souterraines</li><li>Piézométrie</li></ul></td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.ades.eaufrance.fr">www.ades.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche cartographique, par réseau, par date ; affichage et téléchargement des résultats</td></tr>
+					<tr><td>Responsable</td><td>BRGM</td></tr>
+					<tr><td>Producteurs</td><td>BRGM, collectivités territoriales pour piézométrie ; agences de l'eau, ARS pour qualité</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Base Hydro</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_hydro.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Débits et hauteurs d'eau en rivière</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.hydro.eaufrance.fr">www.hydro.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche cartographique, par réseau, par date ; données élaborées ; affichage et téléchargement des résultats après enregistrement</td></tr>
+					<tr><td>Responsable</td><td>Schapi</td></tr>
+					<tr><td>Producteurs</td><td>Schapi, DREAL, SPC</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Naïades</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_naiades.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Qualité des rivières et lacs : chimie, biologie, hydromorphologie, températures en temps réel</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.naiades.eaufrance.fr">www.naiades.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche cartographique, par réseau, par date, par paramètre, par taxon ; affichage et téléchargement des résultats</td></tr>
+					<tr><td>Responsable</td><td>AFB-BRGM</td></tr>
+					<tr><td>Producteurs</td><td>Agences de l'eau, AFB, autres</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Quadrige</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_quadrige.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Qualité des eaux côtières et de transition</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.quadrige.eaufrance.fr">www.quadrige.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche cartographique, par date, par paramètre, par taxon ; affichage des résultats</td></tr>
+					<tr><td>Responsable</td><td>Ifremer</td></tr>
+					<tr><td>Producteurs</td><td>Ifremer, universités, autres</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>BNPE</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_bnpe.jpg" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Prélèvements en eau, ressources, usages</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.bnpe.eaufrance.fr">www.bnpe.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche par collectivité, affichage, téléchargement</td></tr>
+					<tr><td>Responsable</td><td>AFB-BRGM</td></tr>
+					<tr><td>Producteurs</td><td>Agences de l'eau (redevances), DDT (déclarations)</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Onde</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_onde.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Étiages en tête de bassins versants</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.onde.eaufrance.fr">www.onde.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche cartographique, par lieu, par date</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>AFB</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Portails de bassin</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_basin.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Toutes données sur un bassin</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.bassin.eaufrance.fr">www.bassin.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Variable</td></tr>
+					<tr><td>Responsable</td><td>Agences de l'eau</td></tr>
+					<tr><td>Producteurs</td><td>Agences de l'eau, DREAL, collectivités</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>SISPEA</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_sispea.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Organisation des services, prix de l'eau, performances des services public d'eau et d'assainissement ; données brutes et indicateurs</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.bassin.eaufrance.fr">www.bassin.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Recherche cartographique, par collectivité, par date ; affichage et téléchargement des résultats</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>Collectivités, agences de l'eau</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>BNV-D</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/phytos.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Vente de produits phytosanitaires</td></tr>
+					<tr><td>Adresse</td><td><a href="http://data.eaufrance.fr">data.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Téléchargement de synthèses annuelles départementales</td></tr>
+					<tr><td>Responsable</td><td>Ineris-AFB</td></tr>
+					<tr><td>Producteurs</td><td>Agences de l'eau (redevances)</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Rapportage</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_report.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Données des rapportages sur l'eau : données brutes et tabulaires</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.rapportage.eaufrance.fr">www.rapportage.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Téléchargement des données</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>Ministère de l'écologie, agences de l'eau, AFB</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Cartograph</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_cartograph.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Indicateurs cartographiques, tous thèmes</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.cartograph.eaufrance.fr">www.cartograph.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Affichage et téléchargement</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>Tous contributeurs au SIE, indicateurs calculés par l'AFB</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Data.eaufrance</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_data.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Toutes données sur l'eau</td></tr>
+					<tr><td>Adresse</td><td><a href="http://data.eaufrance.fr">data.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Catalogue de métadonnées, moissonnage, téléchargement</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>Tous contributeurs au SIE</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex" data-subsection="Services de traitement">
+		<h1>SEEE</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_seee.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Algorithmes réglementaires pour l'évaluation de l'état des eaux</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.seee.eaufrance.fr">www.seee.eaufrance.fr</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Calcul en ligne, API, documentation, téléchargement des algorithmes</td></tr>
+					<tr><td>Responsable</td><td>AFB</td></tr>
+					<tr><td>Producteurs</td><td>AFB</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="slide" data-background="img/page_courante.svg" data-animation="convex">
+		<h1>Géo-traitements</h1>
+		<div class="content">
+			<figure class="centered">
+				<img src="img/logo_geoprocessing.png" style="max-width: 40vw; max-height: 100%" />
+			</figure>
+			<table class="shadowed headcolumn" style="flex: 1; width:80%; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr><td>Données</td><td>Calculs en ligne mutualisés</td></tr>
+					<tr><td>Adresse</td><td><a href="http://www.reseau.eaufrance.fr/geotraitements">www.reseau.eaufrance.fr/geotraitements</a></td></tr>
+					<tr><td>Caractéristiques</td><td>Bassins versants amont, amont et aval,...</td></tr>
+					<tr><td>Responsable</td><td>BRGM</td></tr>
+					<tr><td>Producteurs</td><td>Tous</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+</body>
+<!--<script src="jquery-3.3.1.min.js"></script>
+<script src="template.js"></script> !-->
+<script src="/template_pres/template_js.js"></script>
+<script src="pres.js"></script>
+</html>
